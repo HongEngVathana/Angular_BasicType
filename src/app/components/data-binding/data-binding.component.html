@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4">OnWay -from .ts to html</div>
+    <div class="col-4">
+      <h1 class="courseName bg-success">{{ courseName }}</h1>
+    </div>
+    <div class="col-4"></div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-4 bg-success">
+    <p>{{ currentDate }}</p>
+  </div>
+  <div class="col-4">
+    interpolation
+    <div>{{ inputType }}</div>
+    <input type="text" value="{{ courseName }}" placeholder="Enter text" />
+    <input type="{{ inputType }}" />
+  </div>
+  <div class="col-4"></div>
+</div>
+
+<div class="row container">
+  <div class="col-4 bg-success">
+    <p>{{ currentDate }}</p>
+  </div>
+  <div class="col-4">
+    interpolation
+    <div>{{ inputType }}</div>
+    <input type="text" value="{{ courseName }}" placeholder="Enter text" />
+    <input type="{{ inputType }}" />
+  </div>
+  <div class="col-4">
+    Property Binding
+    <div [classList]="myClass">Helloo</div>
+    <input type="text" [value]="courseName" />
+    <input [type]="inputType" />
+  </div>
+
+  <div class="col-4 mt-5">
+    <button class="btn btn-success" (click)="showAlert('Hello Bro')">
+      Show Welcome
+    </button>
+    <span (click)="showAlert('Hello bro this is a span')">Click me</span>
+    <button class="btn btn-success" (click)="chageCoureName()">
+      Show Welcome
+    </button>
+  </div>
+
+  <div class="col-6">
+    <input type="text" [(ngModel)]="courseName" />-{{ courseName }}
+
+    <select name="" id="">
+      <option value="">Select</option>
+      <option value="">hello</option>
+      <option value="">everyone</option>
+      <option value="">Ok</option>
+    </select>
+  </div>
+</div>
