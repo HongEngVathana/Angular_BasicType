@@ -1,1 +1,45 @@
-<app-structual></app-structual>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mynavbar"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item" style="margin-top: -12px">
+          <a class="nav-link active" routerLink="emp-list">
+            EmployeeListComponent,</a
+          >
+        </li>
+        <li class="nav-item" style="margin-top: -12px">
+          <a class="nav-link" routerLink="add-emp">Add Employee</a>
+        </li>
+        <li class="nav-item" style="margin-top: -12px">
+          <a class="nav-link" routerLink="structral-dir">Structiral Dir</a>
+        </li>
+        <li class="nav-item" style="margin-top: -12px">
+          <a class="nav-link" routerLink="app-att">AttributeComponent</a>
+        </li>
+        <li class="nav-item" style="margin-top: -12px">
+          <a class="nav-link" routerLink="if">IfelseComponent</a>
+        </li>
+        <li class="nav-item" style="margin-top: -12px">
+          <a class="nav-link" routerLink="for">ForLoop</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search" />
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-structual',
@@ -40,5 +41,9 @@ export class StructualComponent {
     // } else {
     //   this.idDiv2visiable = true;
     // }
+  }
+  constructor(private router: Router) {}
+  naviagteToAttributer() {
+    this.router.navigateByUrl('attributedirective');
   }
 }

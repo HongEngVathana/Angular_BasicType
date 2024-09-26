@@ -1,0 +1,151 @@
+<div class="container">
+  <div class="mt-2 p-2 bg-secondary text-white rounded">
+    <h1>Attribute Directive</h1>
+    <p>ngClass ngStyle...</p>
+    <button class="btn btn-primary">Go to Sturctal</button>
+  </div>
+  <div class="row pt-3">
+    <div class="col-3">
+      @if (div1Cisiable == true) {
+      <div class="p-3 text-center bg-primary">
+        <h4>Div-1</h4>
+      </div>
+      }
+    </div>
+    <div class="col-3">
+      @if (isWarnigDivVisiable) {
+      <div class="p-3 text-center bg-success">
+        <h4>Div-2</h4>
+      </div>
+
+      } @else {
+      <div class="p-3 text-center bg-warning">
+        <h4>Div-2</h4>
+      </div>
+
+      }
+    </div>
+    <div class="col-3">
+      @if (num1===num2) {
+      <div class="bg-warning p-3 text-center">
+        <h4>Div-3</h4>
+      </div>
+      }
+    </div>
+    <div class="col-3">
+      <div class="bg-secondary p-3 text-center">
+        <h4>Div-4</h4>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="p-3 text-center bg-danger">
+        @if (seletedStatus=='Active') {
+        <p>Student Is Active</p>
+
+        } @else if (seletedStatus=='De-Active') {
+        <p>Student Is De-Active</p>
+        } @else if(seletedStatus=='Pending'){
+        <p>Student Is Pending</p>
+
+        } @else {
+        <p>Hello</p>
+        }
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row pt-3">
+  <div class="col-3 text-center">
+    <button class="btn btn-danger mx-4" (click)="hideDiv1()">Hide</button>
+    <button class="btn btn-primary" (click)="showDiv1()">Show</button>
+  </div>
+  <div class="col-3 text-center">
+    <button class="btn btn-success" (click)="toggleDiv2()">Toggle</button>
+  </div>
+  <div class="col-3">
+    <div style="display: flex; align-items: center">
+      <input
+        type="text"
+        [(ngModel)]="num1"
+        placeholder="Num-1"
+        class="width-50"
+      />
+      <input
+        type="text"
+        [(ngModel)]="num2"
+        placeholder="Num-2"
+        class="width-50"
+      />
+    </div>
+  </div>
+
+  <div class="col-3">
+    <div>
+      <input type="checkbox" class="width-50" />
+      <select [(ngModel)]="seletedStatus" name="" id="">
+        <option value="">Select State</option>
+        <option value="Active">Active</option>
+        <option value="De-Active">De-Active</option>
+        <option value="Pending">Pending</option>
+      </select>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-3">
+    <ul>
+      <li></li>
+    </ul>
+  </div>
+  <div class="col-3">
+    <div></div>
+  </div>
+  <div class="col-3">
+    <select name="" id="">
+      <option value=""></option>
+    </select>
+  </div>
+
+  <div class="col-3"></div>
+</div>
+<div class="col-3">
+  <select>
+    <option></option>
+  </select>
+</div>
+
+<div class="row">
+  <div class="col-5">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Total Mark</th>
+          <th>Gender</th>
+          <th>City</th>
+          <th>Active</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>
+            <span> </span>
+          </td>
+          <td></td>
+          <td>
+            <div class="progress">
+              <div class="progress-bar"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-5">
+    <div>Div Test</div>
+  </div>
+</div>

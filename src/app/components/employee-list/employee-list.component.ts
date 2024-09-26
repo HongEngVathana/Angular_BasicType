@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './employee-list.component.html',
   styleUrl: './employee-list.component.css',
 })
-export class EmployeeListComponent {}
+export class EmployeeListComponent {
+  title: string = 'WelcomeToEmployee';
+}
